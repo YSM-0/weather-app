@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="/dist/main.js" defer></script>
+    <link rel="stylesheet" href="/dist/reset.css">
+    <link rel="stylesheet" href="/dist/style.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="deg-toggler">°C</div>
+        <div class="search-div">
+            <input type="text" id="search" placeholder="Type your city..."></input>
+            <button type="button" title="city" id="button">
+                <img title="search" src="/dist/assets/search-icon.svg"></img>
+            </button>
+        </div>
+        <div class="info-div">
+            <div class="name"></div>
+            <div class="country"></div>
+            <div class="temp"></div>
+            <div class="feels-like"></div>
+            <div class="wind"></div>
+            <div class="humidity"></div>
+            <div class="cloud"></div>
+            <img src="#" alt="condition-icon" class="icon">
+        </div>
+    </div>
+</body>
+</html>

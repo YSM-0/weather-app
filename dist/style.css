@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+:root {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Prompt', sans-serif;
+    font-size: clamp(15px, calc(1em + 0.1vh), 30px);
+    --background-color: #F1FFFA;
+    --primary-color: #FF7F11;
+    --secondary-color: #9A8C98;
+    --text-color: #9A8C98;
+    background-color: var(--background-color);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.main-content {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-div {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#button {
+    all: unset;
+    cursor: pointer;
+    background-image: url('/dist/assets/search-icon.svg');
+}
+
+input::placeholder {
+    color: #f1fffa85;
+}
+
+input {
+    all: unset;
+    border-bottom: 2px solid var(--primary-color);
+    background-color: var();
+    padding-bottom: 5px;
+    color: var(--background-color);
+}
+
+.info-div {
+    height: 100%;
+}
+
+.deg-toggler {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    margin-right: 10vw;
+    font-size: 2rem;
+    font-family: 'Promp';
+    color: var(--background-color);
+    transition: 300ms;
+}
+.deg-toggler:hover {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.name {
+    color: var(--background-color);
+    font-size: 4rem;
+    margin-top: 50px;
+}
+
+.country {
+    color: #f1fffa85;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.temp, .feels-like, .humidity, .cloud, .wind, .icon {
+    margin: 35px;
+    color: var(--background-color);
+    font-weight: bolder;
+    width: 180px;
+}
